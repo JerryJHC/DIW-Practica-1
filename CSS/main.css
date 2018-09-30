@@ -235,3 +235,46 @@ display: block; }
 
 #wrap-footer, #container:after {
 height: 60px; }
+
+/*---------------------------------------------------------------------------*/
+/*  10: Footer
+/*---------------------------------------------------------------------------*/
+#wrap-footer {
+    clear: both;
+    background-color: #272727; }
+  
+  #footer {
+    width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 11px;
+    text-align: left;
+    color: #777674;
+    overflow: hidden; }
+  
+  #footer p {
+    font-size: 11px;
+    margin-bottom: 0px; }
+  
+  #footer .copyright span {
+    color: #333; }
+  
+  #footer a {
+    color: #777674;
+    text-decoration: none; }
+  
+  #footer a:hover {
+    color: #FFF; }
+  
+  #footer .design a:hover {
+    color: #FFF; }
+  
+  #footer .copyright {
+    float: left;
+    width: 760px; }
+  
+  #footer .design {
+    float: right;
+    width: 100px;
+    text-align: right; }
+  
