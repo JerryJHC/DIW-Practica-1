@@ -229,7 +229,7 @@ Para cada uno de los botones se define el ancho de la imagen en el enlace y
 la imagen correspondiente como fondo del span, cada una tiene
 100px de alto para que se parta por la mitad para el efecto */
 .menu01 {
-    width: 76px; 
+    width: 78px; 
 }
 
 .menu01 span {
@@ -237,7 +237,7 @@ la imagen correspondiente como fondo del span, cada una tiene
 }
 
 .menu02 {
-    width: 79px; 
+    width: 81px; 
 }
 
 .menu02 span {
@@ -253,7 +253,7 @@ la imagen correspondiente como fondo del span, cada una tiene
 }
 
 .menu04 {
-    width: 73px; 
+    width: 72px; 
 }
 
 .menu04 span {
@@ -261,7 +261,7 @@ la imagen correspondiente como fondo del span, cada una tiene
 }
 
 .menu05 {
-    width: 78px; 
+    width: 94px; 
 }
 
 .menu05 span {
