@@ -393,3 +393,20 @@ la imagen correspondiente como fondo del span, cada una tiene
     width: 100%;
     height: auto;
 }
+
+/* Listado de objetivos*/
+ul.objetivos{
+    list-style-type: circle;
+    margin: 2%;
+    padding: 2%;
+    font-size: 2.5em;
+}
+
+/* Para la imagen de seccion en construccion*/
+.construccion {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin: 10%;
+}
