@@ -9,55 +9,47 @@
     <meta name="author" content="Jerry Henríquez">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+
+    <!-- BootsTrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body>
 
-<div id="container">
-
-    <div id="wrap-header">
-        <div id="header">
-            <div id="logo">
-                <h1><a href="index.html">J2 Games<span> </span></a></h1>
+    <nav class="navbar navbar-inverse header_container">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <a href="index.html">J2 Games<span> </span></a>
             </div>
-            <div class="social">
-                <ul>
-                    <li><a href="https://www.facebook.com/j2games.freelance" class="facebook" target="blank">Facebook</a></li>
-                    <li><a href="https://twitter.com/j2_games" class="twitter" target="blank">Twitter</a></li>
-                </ul>
-            </div>
-            <!-- /logo -->
-            <div class="mainmenu">
-                <ul>
-                    <li class="active"><a href="index.html" class="menu01">Home<span> </span></a></li>
-                    <li><a href="about.html" class="menu02">About<span> </span></a></li>
-                    <li><a href="games.html" class="menu03">Games<span> </span></a></li>
-                    <li><a href="store.html" class="menu04">Store<span> </span></a></li>
-                    <li><a href="contact.html" class="menu05">Contact<span> </span></a></li>
-                    <li><a href="objetives.html" class="menu06">Objetives<span> </span></a></li>
-                </ul>
-                <br class="cleaner">
-            </div>
-            <br class="cleaner">
-            <!-- /mainmenu --> 
+            <ul class="nav navbar-nav">
+                <li class="facebook"><a href="https://www.facebook.com/j2games.freelance" target="blank">Facebook</a></li>
+                <li class="twitter"><a href="https://twitter.com/j2_games" target="blank">Twitter</a></li>
+                <li class="active mainmenu"><a href="index.html" class="menu01">Home<span> </span></a></li>
+                <li class="mainmenu"><a href="about.html" class="menu02">About<span> </span></a></li>
+                <li class="mainmenu"><a href="games.html" class="menu03">Games<span> </span></a></li>
+                <li class="mainmenu"><a href="store.html" class="menu04">Store<span> </span></a></li>
+                <li class="mainmenu"><a href="contact.html" class="menu05">Contact<span> </span></a></li>
+                <li class="mainmenu"><a href="objetives.html" class="menu06">Objetives<span> </span></a></li>
+            </ul>
         </div>
-        <!-- /header --> 
-    </div>
+      </nav>
 
-    <div id="wrap-content">
+<div class="container-fluid">
 
-        <div id="content">
-
-            <div class="slide-container" >
+        <div class="row">
+            <div class="col-sm-4 slide-container" align="center" >
                 <a href="games.html">
-                    <img src="Images/CoinCollector/1.png" class="slides" alt="CoinCollector level 1" style="width:100%" />
-                    <img src="Images/CoinCollector/2.png" class="slides" alt="CoinCollector level 2" style="width:100%" />
-                    <img src="Images/CoinCollector/3.png" class="slides" alt="CoinCollector level 3" style="width:100%" />
+                    <img src="Images/CoinCollector/1.png" class="slides" alt="CoinCollector level 1" style="width:90%" />
+                    <img src="Images/CoinCollector/2.png" class="slides" alt="CoinCollector level 2" style="width:90%" />
+                    <img src="Images/CoinCollector/3.png" class="slides" alt="CoinCollector level 3" style="width:90%" />
                 </a>
             </div>
 
-            <div class="aside-panel">
+            <div class="col-sm-8 game-description">
 
-                <h2>CoinCollector</h2>
+                <h1>CoinCollector</h1>
 
                 <p>
                     Juega a este juego de plataformas, en el que tendrás que recolectar las monedas del escenario
@@ -72,24 +64,23 @@
 
         </div>
 
-    <!-- /wrap-content -->
-    </div>
-
-    <div id="wrap-footer">
-        <div id="footer">
-            <p class="copyright"> 
-                Copyright © J2 Games Freelance <span>&nbsp;|&nbsp;</span> All Rights Reserved. 
-                <span>&nbsp;|&nbsp;</span><a href="https://www.facebook.com/j2games.freelance" target="blank">Facebook</a> 
-                <span>&nbsp;|&nbsp;</span><a href="https://twitter.com/j2_games" target="blank">Twitter</a> 
-                <span>&nbsp;|&nbsp;</span>Jerry Henríquez
-            </p>
-            <br class="cleaner" >
-        </div>
-        <!-- /footer --> 
-    </div>
-    <!-- /wrap-footer --> 
-    
 </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small special-color-dark pt-4">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-4">
+            Copyright © J2 Games Freelance <span>&nbsp;|&nbsp;</span> All Rights Reserved. 
+            <span>&nbsp;|&nbsp;</span><a href="https://www.facebook.com/j2games.freelance" target="blank">Facebook</a>
+            <span>&nbsp;|&nbsp;</span><a href="https://twitter.com/j2_games" target="blank">Twitter</a> 
+            <span>&nbsp;|&nbsp;</span>Jerry Henríquez
+        </div>
+        <!-- Copyright -->
+      
+</footer>
+<!-- Footer -->
+
 <script src="JS/main.js"></script>
 </body>
 </html>

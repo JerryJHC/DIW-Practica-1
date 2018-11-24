@@ -1,95 +1,29 @@
 /* Reset de los elementos de la página*/
 * { 
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-article, aside, footer, header, menu, nav, section {
-  display: block; }
-
-ol, ul {   
-  list-style: none; }
-
-html, body {
-    height: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
-/* Fuente base para todo la web */
-body {
-    font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 12px;
-    color: #B9B8B5;
-    background-color: #181815;
-}
-
-/* Contenedor principal de todos los elementos y definción del background de la web*/
-#container {
-    height: 100%;
-    margin-bottom: -60px;
+/* Fondo para toda la página */
+body{
     background: #181815 url(../Images/background.png) repeat;
     position: relative;
 }
 
-
-/* Enlaces */
-a:link,
-a:visited {
-    text-decoration: none;
-    color: #33CC99;
-    -webkit-transition: color .2s ease;
-    transition: color .2s ease;
-}
-  
-a:hover {
-    color: #777674; 
-}
-
-/* Para los títulos de los parrafos */
-h2 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    color: #F8F3E5;
-    line-height: 1.5em;
-}
-
-/* Estilo para parrafos*/
-p {
-    margin-bottom: 2%;
-    font-size: 2em;
-    line-height: 1.6em; 
-}
-
-/* Cabecera*/
-#wrap-header {
-    height: 60px;
-    background-color: #000;
-}
-  
-#header {
-    width: 940px;
-    margin: 0 auto;
-    padding: 0 10px;
-    overflow: hidden;
-    background-color: #000;
-}
-
-/* Logo */
-#logo {
-    float: left;
-    width: 220px;
-}
-
 /* Para el texto del logo y el enlace que se funda con el fondo*/
-#logo h1 {
+.header_container .container-fluid{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     position: relative;
     color: #000;
+    background-color: #000;
 }
-#logo a {
+
+.navbar-header a {
     display: block;
     width: 220px;
     height: 60px;
@@ -99,8 +33,8 @@ p {
     color: #000;
 }
 
-/* Mitad de la imagen sobre el h1 como logo */
-#logo span {
+/* Mitad de la imagen sobre el texto como logo */
+.navbar-header span {
     background-image: url(../Images/menu/j2-games-logo.png);
     background-position: left top;
     background-repeat: no-repeat;
@@ -113,32 +47,18 @@ p {
     width: 100%; 
 }
 
-#logo a:hover {
+.navbar-header a:hover {
     visibility: visible;
 /* --- IE6 bugfix --- */ }
 
 /* Para el efecto utiliza la otra mitad de la imagen */
-#logo a:hover span {
+.navbar-header a:hover span {
     background-position: -340px top; 
-}
-
-/* Social */
-.social {
-    float: left;
-    width: 105px;
-    margin: 5px 0;
-}
-
-.social li {
-    display: block;
-    float: left;
-    width: 35px;
-    height: 50px;
 }
 
 /* Para que cargue la imagen sobre el texto de las redes sociales 
 por defecto se ve el primer bloque que es de facebook */
-.social li a {
+.facebook a , .twitter a {
     display: block;
     width: 35px;
     height: 50px;
@@ -152,42 +72,29 @@ por defecto se ve el primer bloque que es de facebook */
 }
 
 /* Usa el segundo bloque que es el logo de google+ */
-.social li a.google {
+.google a {
     background-position: -35px 0; 
 }
 
 /* Usa el tecer bloque que es el logo de twitter*/
-.social li a.twitter {
+.twitter a {
     background-position: -70px 0;
 }
 
 /* Aplica todo la opacidad con el hover del enlace */
-.social li a:hover {
+.facebook a:hover , .twitter a:hover{
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     filter: alpha(opacity=100);
     opacity: 1;
 }
 
-/* Menu */
-.mainmenu {
-    width: 547px;
-    float: right;
-    margin: 5px 0;
-}
-
-.mainmenu li {
-    float: left;
-    list-style-type: none;
-    position: relative;
-}
-
 /* Modifica el enlace para que desaparezca de la imagen */
 .mainmenu a {
     color: #666;
-    float: left;
+    /*float: left;*/
     height: 50px;
     overflow: hidden;
-    position: relative;
+    /*position: relative;*/
     text-align: center;
     text-decoration: none;
     text-indent: -9999px; 
@@ -210,7 +117,7 @@ por defecto se ve el primer bloque que es de facebook */
 }
 
 /* Para que el enlace activo use la mitad inferior de la imagen */
-.mainmenu .active span {
+.active span {
     background-position: left bottom; 
 }
 
@@ -276,137 +183,24 @@ la imagen correspondiente como fondo del span, cada una tiene
     background-image: url(../Images/menu/objetives.png); 
 }
 
-/* Clase para agregar saltos sin nada alrededor*/
-.cleaner {
-    font-size: 0;
-    line-height: 0;
-    height: 0;
-    clear: both; 
+/* Para que al haber poco contenido se separe del footer*/
+body > .container-fluid{
+    min-height: 85vh;
 }
 
-/* Para que se posicione abajo del todo */
-#wrap-footer {
-    height: 60px;
-    width: 100%;
-    clear: both;
-    background-color: #272727;
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-}
-
-#footer {
-    margin: 0 auto;
-    padding: 20px;
-    font-size: 11px;
-    text-align: left;
-    color: #777674;
-    overflow: hidden;
-}
-
-#footer p {
-    font-size: 11px;
-    margin-bottom: 0px;
-}
-
-/* Para la letra del footer */
-#footer .copyright span {
-    color: #333;
-}
-
-/* Para los enlaces a redes sociales*/
-#footer a {
-    color: #777674;
-    text-decoration: none;
-}
-
-#footer a:hover {
-    color: #FFF;
-}
-
-#footer .design a:hover {
-    color: #FFF;
-}
-
-#footer .copyright {
-    float: left;
-    width: 760px;
-}
-
-#footer .design {
-    float: right;
-    width: 100px;
-    text-align: right; 
-}
-
-/* Padding por defecto para todo el contenido*/
-#wrap-content {
-    padding: 30px 0 0px 0;
-}
-
-#content {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 0 60px 0; 
-    display: flex;
-}
-
-/* Para las imagenes de contenido como slides */
-.slide-container{
-    max-width: 45%;
-    height: 50%;
-    overflow: hidden;
-    border: 1em solid #272727;
-}
-
-.aside-panel{
-    max-width: 40%;
-    height: auto;
-    float: right;
-    padding-left: 5em;
-    padding-top: 7em;
-}
-
-/* Para el texto descriptivo de juegos */
-.desc {
-    padding: 1em;
-    text-align: center;
+/* Letra para las descripciones */
+.game-description{
     font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
-    font-size: 2em;
     color: #B9B8B5;
-    background-color: #181815;
 }
 
-/* Para las imagenes de la galeria de juegos */
-.gallery {
-    margin: 5em;
-    border: 1em solid #ccc;
-    float: left;
-    width: 30%;
+/* Para dejar el foooter fijo abajo */
+footer {
+    background-color: #000;
+    color: white;
 }
 
-.gallery:hover {
-    border: 1em solid #777;
-}
-
-.gallery img {
-    width: 100%;
-    height: auto;
-}
-
-/* Listado de objetivos*/
-ul.objetivos{
-    list-style-type: circle;
-    margin: 2%;
-    padding: 2%;
-    font-size: 2.5em;
-}
-
-/* Para la imagen de seccion en construccion*/
-.construccion {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin: 10%;
+/* Para que el slide tenga un borde */
+.slide-container{
+    border: 1em solid #272727;
 }
