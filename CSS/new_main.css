@@ -1,0 +1,41 @@
+/* Para el texto del logo y el enlace que se funda con el fondo*/
+.container-fluid{
+    background-color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    position: relative;
+    color: #000;
+}
+
+.navbar-header a {
+    display: block;
+    width: 220px;
+    height: 60px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Mitad de la imagen sobre el texto como logo */
+.navbar-header span {
+    background-image: url(../Images/menu/j2-games-logo.png);
+    background-position: left top;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; 
+}
+
+.navbar-header a:hover {
+    visibility: visible;
+/* --- IE6 bugfix --- */ }
+
+/* Para el efecto utiliza la otra mitad de la imagen */
+.navbar-header a:hover span {
+    background-position: -340px top; 
+}
