@@ -1,10 +1,20 @@
+/* Reset de los elementos de la página*/
+* { 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
 /* Para el texto del logo y el enlace que se funda con el fondo*/
-.container-fluid{
-    background-color: #000;
+.header_container .container-fluid{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: normal;
     position: relative;
     color: #000;
+    background-color: #000;
 }
 
 .navbar-header a {
@@ -165,4 +175,8 @@ la imagen correspondiente como fondo del span, cada una tiene
 
 .menu06 span {
     background-image: url(../Images/menu/objetives.png); 
+}
+
+.game-description{
+    color: white;
 }
