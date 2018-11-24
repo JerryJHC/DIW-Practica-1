@@ -184,7 +184,7 @@ la imagen correspondiente como fondo del span, cada una tiene
 }
 
 /* Para que al haber poco contenido se separe del footer*/
-body > .container-fluid{
+body > .container-fluid , body > .container{
     min-height: 85vh;
 }
 
