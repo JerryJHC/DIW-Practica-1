@@ -189,7 +189,7 @@ body > .container-fluid , body > .container{
 }
 
 /* Letra para las descripciones */
-.game-description{
+.game-description , .container > h2{
     font-family: "Lucida Grande", Helvetica, Arial, Verdana, sans-serif;
     color: #B9B8B5;
 }
