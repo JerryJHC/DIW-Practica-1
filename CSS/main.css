@@ -110,7 +110,7 @@ por defecto se ve el primer bloque que es de facebook */
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
+    /* width: 100%; */
     /* Animate Menu */
     -webkit-transition: background .3s ease;
     transition: background .3s ease; 
@@ -134,53 +134,42 @@ se activa la animación del menú definida antes */
 /* Menu each button 
 Para cada uno de los botones se define el ancho de la imagen en el enlace y
 la imagen correspondiente como fondo del span, cada una tiene
-100px de alto para que se parta por la mitad para el efecto */
-.menu01 {
+100px de alto para que se parta por la mitad para el efecto
+Se establece un minimo para que al aprecel horizontalmente se vea cada enlace */
+.menu01 {   min-width: 78px;    }
+.menu01 span {
+    background-image: url(../Images/menu/home.png); 
     width: 78px; 
 }
 
-.menu01 span {
-    background-image: url(../Images/menu/home.png); 
-}
-
-.menu02 {
+.menu02 {   min-width: 81px;    }
+.menu02 span {
+    background-image: url(../Images/menu/about.png); 
     width: 81px; 
 }
 
-.menu02 span {
-    background-image: url(../Images/menu/about.png); 
-}
-
-.menu03 {
+.menu03 {   min-width: 85px;    }
+.menu03 span {
+    background-image: url(../Images/menu/games.png); 
     width: 85px; 
 }
 
-.menu03 span {
-    background-image: url(../Images/menu/games.png); 
-}
-
-.menu04 {
+.menu04 {   min-width: 72px;    }
+.menu04 span {
+    background-image: url(../Images/menu/store.png); 
     width: 72px; 
 }
 
-.menu04 span {
-    background-image: url(../Images/menu/store.png); 
-}
-
-.menu05 {
+.menu05 {   min-width: 94px;    }
+.menu05 span {
+    background-image: url(../Images/menu/contact.png); 
     width: 94px; 
 }
 
-.menu05 span {
-    background-image: url(../Images/menu/contact.png); 
-}
-
-.menu06 {
-    width: 108px; 
-}
-
+.menu06 {   min-width: 108px;   }
 .menu06 span {
     background-image: url(../Images/menu/objetives.png); 
+    width: 108px; 
 }
 
 /* Para que al haber poco contenido se separe del footer*/
